@@ -1,0 +1,64 @@
+body {
+    background: url(../images/background.jpg);
+    background-size: 100%;
+    color: #dddddd;
+}
+
+.panel {
+    
+}
+
+.score {
+    background: #000000;
+    border: solid 1px #ffffff;
+    border-radius: 5px;
+}
+
+.char {
+    padding:10px;
+}
+
+.btn-success {
+    background:#666;
+    border-color: #666;
+}
+
+.btn-success:hover {
+    background: #444;
+    border-color: #444;
+}
+
+.char-img{
+    width: 100%;
+    max-height: 380px;
+}
+
+.chosen-hero, .chosen-enemy {
+    max-height: 400px;
+    border: 1px solid #ffffff
+}
+
+h3, p {
+    display: inline-block;
+    text-align: center;
+}
+
+.gameplay {
+    height: 450px;
+    background: rgba(0,0,0,0.5);
+}
+
+.fader-red {
+    background: #ee0979;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #ff6a00, #ee0979);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #ff6a00, #ee0979); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    opacity: 0.9;
+    transition: 0.3s;
+}
+.fader-green {
+    background: #DCE35B;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #45B649, #DCE35B);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #45B649, #DCE35B); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    opacity: 0.9;
+    transition: 0.3s;
+}
