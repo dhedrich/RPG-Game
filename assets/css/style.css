@@ -4,10 +4,6 @@ body {
     color: #dddddd;
 }
 
-.panel {
-    
-}
-
 .score {
     background: #000000;
     border: solid 1px #ffffff;
@@ -16,6 +12,10 @@ body {
 
 .char {
     padding:10px;
+}
+
+button {
+    padding: 0 !important;
 }
 
 .btn-success {
@@ -61,4 +61,53 @@ h3, p {
     background: linear-gradient(to right, #45B649, #DCE35B); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     opacity: 0.9;
     transition: 0.3s;
+}
+
+@media screen and (max-width: 768px){
+    /* media queries for mobile responsiveness */
+    .char-img{
+        max-height: 100px;
+    }
+    
+    button {
+        font-size: 10px !important;
+    }
+
+    .chosen-hero, .chosen-enemy {
+        max-height: 200px;
+    }
+    
+    h3, p {
+        font-size: 20px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+    
+    .gameplay {
+        height: 250px;
+        background: rgba(0,0,0,0.5);
+    }
+
+
+    .characters {
+        display: flex;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .char {
+        width: 33%;
+        padding: 5px;;
+    }
+
+    .col-sm-5 {
+        width:50%;
+        height: 100%;
+    }
+
+    .col-sm-5 .char-img {
+        max-height:140px;
+    }
+
 }

@@ -112,7 +112,7 @@ $(document).ready(function () {
         $('.col-sm-5').empty()
         var num = Math.floor(12 / characters.length)
         for (var i = 0; i < characters.length; i++) {
-            var charThing = $("<div class='char inactive col-md-" + num + "'character-" + i + "' value='" + i + "'></div>")
+            var charThing = $("<div class='char inactive col-sm-" + num + "'character-" + i + "' value='" + i + "'></div>")
             charThing.html(
                 "<h3>" + characters[i].name + "</h3>" +
                 "<img class='char-img' src='" + characters[i].image + "'/>" +
@@ -135,7 +135,7 @@ $(document).ready(function () {
             var p = $(this).html()
             $(this).removeClass('inactive')
             var q = $('.chosen-hero').append(p)
-            q.removeClass('col-md-2')
+            q.removeClass('col-sm-2')
             q.removeClass('inactive')
             $('#enemies-remaining').text('Choose First Challenger')
         } else if (!isEnemyChosen && $(this).hasClass('inactive')) {
@@ -145,7 +145,7 @@ $(document).ready(function () {
             var p = $(this).html()
             $(this).removeClass('inactive')
             var q = $('.chosen-enemy').append(p)
-            q.removeClass('col-md-2')
+            q.removeClass('col-sm-2')
             q.removeClass('inactive')
             $('#enemies-remaining').text('Enemies Remaining: ' + $('.inactive').length)
         }
